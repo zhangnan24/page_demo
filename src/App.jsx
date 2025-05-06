@@ -35,7 +35,8 @@ const App = () => {
             const formatedStr = matchedList
               .join("、")
               .replaceAll("，", "、")
-              .replace(/\s+/g, "、");
+              .replace(/\s+/g, "、")
+              .replace(/、{2,}/g, '、');
 
             res.push(`${s}_${k}：${formatedStr}`);
           });
