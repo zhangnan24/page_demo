@@ -74,8 +74,8 @@ const App = () => {
       >
         <div style={{ margin: "200px 0" }}>
           <h1>点击/拖拽excel进行读取</h1>
-          <h3 style={{ color: "red", margin: 0 }}>先删除无关行、无关列</h3>
-          <h3 style={{ color: "red", margin: 0 }}>不要使用合并单元格</h3>
+          <h3 style={{ color: "red", margin: 0 }}>先删除无关行、无关列，并保证第一行为表头</h3>
+          <h3 style={{ color: "red", margin: 0 }}>表头不要使用合并单元格</h3>
         </div>
       </Upload.Dragger>
 
